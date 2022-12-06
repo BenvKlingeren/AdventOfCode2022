@@ -14,7 +14,7 @@ fun main() {
         input.parse().fold(0) { score, (opponent, me) ->
             score + me.points + me.play(opponent)
         }       
-    }")
+    }\n")
 
     val allMoves = Move.all()
     print("fixed score: ${
