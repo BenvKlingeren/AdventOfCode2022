@@ -9,7 +9,6 @@ fun main() {
 
     print("sum of group badges: ${
         input.parseToElfGroups().fold(0) { total, group ->
-            print("$group\n\n")
             total + group[0].intersect(group[1]).intersect(group[2]).first().priority()
         }
     }")
